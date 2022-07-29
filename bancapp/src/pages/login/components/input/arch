@@ -1,0 +1,37 @@
+import React from "react";
+
+function Input({attribute, handleChange, param }){
+    return(
+        <div>
+            <input 
+            placeholder={attribute.placeholder}
+            id={attribute.id}
+            name={attribute.name}
+            type={attribute.type}
+            onChange={(e) => handleChange(e.target.name, e.target.value)}
+            className='regular-style'
+            ></input>
+        </div>
+    )
+};
+
+export default Input;
+
+<div className="login-container">
+            <Title text="Bienvenido" />
+            <Label text='Usuario'/>
+            <Input 
+            attribute={{
+            placeholder:'Ingrese un usuario',
+            id:'usuario',
+            name:'usuario',
+            type:'text',
+            }}    
+            />
+
+
+function handleChange(name.value){
+        if(name=== 'usuario'){
+
+        }
+    }
